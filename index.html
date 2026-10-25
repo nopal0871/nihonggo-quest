@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nihongo Quest: belajar Hiragana, Katakana, dan Kanji</title>
+  <meta name="description" content="Belajar huruf Jepang lewat quest singkat: kenali huruf, latihan ucapan, dan latihan menulis. Progres tersimpan di browser.">
+  <meta name="theme-color" content="#f7faf4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d9456c'/%3E%3Ctext x='32' y='47' font-size='42' text-anchor='middle' fill='white'%3E%E3%81%82%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-dashboard">
+  <main class="shell">
+    <header class="hero">
+      <h1 class="brand"><span lang="ja">日本語</span> Quest</h1>
+      <p class="lead">Satu quest, satu huruf baru. Pilih level, selesaikan latihannya, dan lihat progresmu naik.</p>
+      <p class="stats" id="stats" aria-live="polite"></p>
+    </header>
+
+    <section aria-labelledby="levels-title">
+      <h2 id="levels-title" class="visually-hidden">Pilih level</h2>
+      <ul class="levels" id="levels"></ul>
+    </section>
+
+    <section class="howto" aria-labelledby="howto-title">
+      <h2 id="howto-title">Cara kerja quest</h2>
+      <ul>
+        <li><span class="mark" aria-hidden="true">📖</span><span><strong>Kenali huruf.</strong> Tiap quest mengenalkan satu huruf baru, lalu menguji bacaannya.</span></li>
+        <li><span class="mark" aria-hidden="true">🎤</span><span><strong>Latihan ucapan.</strong> Muncul setiap dua huruf. Ucapkan hurufnya ke mikrofon.</span></li>
+        <li><span class="mark" aria-hidden="true">✍️</span><span><strong>Latihan menulis.</strong> Muncul setiap lima quest. Tulis hurufnya di kanvas.</span></li>
+      </ul>
+    </section>
+
+    <div class="panel-slot" id="voicePanel"></div>
+
+    <footer class="foot">
+      <p>Progres tersimpan di browser ini, tanpa akun.</p>
+      <button class="link-btn" id="resetAll" type="button">Hapus semua progres</button>
+    </footer>
+  </main>
+
+  <noscript><p class="noscript">Nihongo Quest membutuhkan JavaScript. Aktifkan JavaScript di browser lalu muat ulang halaman.</p></noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/checkers.js"></script>
+  <script src="js/quests.js"></script>
+  <script src="js/voice.js"></script>
+  <script src="js/mic.js"></script>
+  <script src="js/panel.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

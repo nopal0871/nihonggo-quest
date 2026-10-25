@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quest: Nihongo Quest</title>
+  <meta name="theme-color" content="#f7faf4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d9456c'/%3E%3Ctext x='32' y='47' font-size='42' text-anchor='middle' fill='white'%3E%E3%81%82%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-quest">
+  <div class="quest-shell">
+    <header class="topbar">
+      <a class="back" href="index.html" aria-label="Kembali ke Dashboard"><span aria-hidden="true">←</span> Dashboard</a>
+      <h1 class="quest-title" id="levelTitle">Memuat</h1>
+      <span class="counter" id="counter" aria-live="polite"></span>
+    </header>
+
+    <div class="progress" id="progressBar" role="progressbar" aria-label="Progres level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <ol class="path" id="path" aria-label="Peta quest"></ol>
+
+    <main class="stage" id="stage"></main>
+
+    <div class="panel-slot" id="voicePanel"></div>
+  </div>
+
+  <noscript><p class="noscript">Nihongo Quest membutuhkan JavaScript. Aktifkan JavaScript di browser lalu muat ulang halaman.</p></noscript>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/checkers.js"></script>
+  <script src="js/quests.js"></script>
+  <script src="js/voice.js"></script>
+  <script src="js/mic.js"></script>
+  <script src="js/panel.js"></script>
+  <script src="js/quest.js"></script>
+</body>
+</html>
